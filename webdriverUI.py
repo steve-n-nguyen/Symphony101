@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 import time
 
-driver = webdriver.Chrome("Z:\\Users\\steve.nguyen\\PycharmProjects\\UserDrivers\\chromedriver")
+driver = webdriver.Chrome("C:\\Users\\steve_n_nguyen\\PycharmProjects\\UserDrivers\\chromedriver_win64\\chromedriver")
 driver.maximize_window()
 driver.get("http://google.com")
 
@@ -22,7 +22,7 @@ except NoSuchElementException:
     print("Failed, no such element Steve")
 
 
-driver.save_screenshot("Z:\\Users\\steve.nguyen\\UserOut\\screenshot.png")
+driver.save_screenshot("C:\\Users\\steve_n_nguyen\\UserOut\\screenshot.png")
 text = driver.find_element_by_xpath(".//body").text
 print(text)
 
