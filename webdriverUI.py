@@ -3,7 +3,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 import time
 
-driver = webdriver.Chrome("C:\\Users\\steve_n_nguyen\\PycharmProjects\\UserDrivers\\chromedriver_win64\\chromedriver")
 driver = webdriver.Chrome('C:\\Users\\steve_n_nguyen\\PycharmProjects\\UserDrivers\\chromedriver_win64\\chromedriver')
 driver.maximize_window()
 driver.get("http://google.com")
